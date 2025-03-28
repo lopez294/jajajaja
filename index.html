@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventana Inicial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px solid white;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+        }
+    </style>
+    <script>
+        function abrirVentanaPaginaTroll() {
+            const nuevaVentana = window.open("", "_blank", "width=5000,height=5000");
+            nuevaVentana.document.write(`
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Página Troll</title>
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                            text-align: center;
+                            background-color: black;
+                            color: white;
+                            animation: colorChange 2s infinite;
+                        }
+                        @keyframes colorChange {
+                            0% { background-color: black; color: white; }
+                            25% { background-color: red; color: yellow; }
+                            50% { background-color: blue; color: pink; }
+                            75% { background-color: green; color: orange; }
+                            100% { background-color: black; color: white; }
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h1>¡Bienvenido a mi Página Troll hermano de pituuchx!</h1>
+                    <h1>mejor conocido el coje yeguas</h1>
+                    <p>¿Qué tal este baile de colores?</p>
+                    <h1>o lo mejor si ves esto estás bien mariguano loko</h1>
+                    <h>TOOSS 😂</h>
+                    <img src="wow.gif" alt=""><br/>
+                    <img src="tos.jpg" alt="">
+                </body>
+                </html>
+            `);
+        }
+
+        function abrirVentanaEsteWey() {
+            const nuevaVentana = window.open("", "_blank", "width=5000,height=5000");
+            nuevaVentana.document.write(`
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Este Wey</title>
+                </head>
+                <body style="text-align: center; background-color: black; color: white;">
+                    <h1>Este wey ahora te toca aser una chaqueta vendo  imagenes jajaja 😂</h1>
+                    <img src="mujer1.gif" alt="">
+                    <img src="mujer2.gif" alt="">
+                </body>
+                </html>
+            `);
+        }
+    </script>
+</head>
+<body>
+    <h1>¡Bienvenido! a esta pagina culos </h1> <br/> <br/>
+    <h1>hey mampo quieres ir  la zona por unos culos   </h1><br/><br/>
+    <p>¿Quieres ir pues ?</p>
+    <button onclick="abrirVentanaPaginaTroll()">Sí</button>
+    <button onclick="abrirVentanaEsteWey()">No</button>
+</body>
+</html>
